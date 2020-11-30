@@ -1,0 +1,41 @@
+# version: "3"
+# services:
+#   server:
+#     build: backend/
+#     ports:
+#       - "3000:3000"
+#     depends_on:
+#       - db
+#     container_name: docker_server
+#   client:
+#     build: frontend/
+#     ports:
+#       - "8080:8080"
+#     container_name: docker_client
+#   db:
+#     image: mongo:latest
+#     container_name: docker_db
+
+
+version: "1"
+services:
+  mongo:
+    container_name: mongo
+    hostname: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+  backend:
+    build: backend/
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  frontend:
+    build: frontend/
+    #command: http-server ./dist #здесь можно перезаписать CMD из Dockerfile в /client
+    network_mode: host
+    ports:
+      - "8081:8081"
+    depends_on:
+      - backend
