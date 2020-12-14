@@ -20,13 +20,13 @@
 
 ## Таблица сравнения по критериям
 
- | First Algorithm | Second Algorithm | Third Algorithm | Fourth Algorithm | Fifth Algorithm
--|-----------------|------------------|-----------------|------------------|----------------
-smth 1| 1 | 2 | 3 | 4 | 5
-smth 2| 1 | 2 | 3 | 4 | 5
-smth 3| 1 | 2 | 3 | 4 | 5
-smth 4| 1 | 2 | 3 | 4 | 5
-smth 5| 1 | 2 | 3 | 4 | 5
+|   | First Algorithm | Second Algorithm | Third Algorithm | Fourth Algorithm | Fifth Algorithm |
+|---|:----------------|:-----------------|:----------------|:-----------------|:--------------- |
+|smth 1| 1 | 2 | 3 | 4 | 5 |
+|smth 2| 1 | 2 | 3 | 4 | 5 |
+|smth 3| 1 | 2 | 3 | 4 | 5 |
+|smth 4| 1 | 2 | 3 | 4 | 5 |
+|smth 5| 1 | 2 | 3 | 4 | 5 |
 
 ## Выводы по итогам сравнения
 
